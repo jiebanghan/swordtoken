@@ -1,0 +1,4 @@
+crypto/x13hash/libbitcoin_crypto_base_a-hamsi_helper.o: \
+ crypto/x13hash/hamsi_helper.c /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:
