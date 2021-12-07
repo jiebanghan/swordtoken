@@ -15,11 +15,11 @@ Unicode true
 !define URL https://bitcoincore.org/
 
 # MUI Symbol Definitions
-!define MUI_ICON "/home/gilsun91/bitcoin-master/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/gilsun91/bitcoin-master/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/gilsun91/bitcoin-master/swordtoken/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/gilsun91/bitcoin-master/swordtoken/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/home/gilsun91/bitcoin-master/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/gilsun91/bitcoin-master/swordtoken/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
@@ -28,7 +28,7 @@ Unicode true
 !define MUI_FINISHPAGE_RUN "$WINDIR\explorer.exe"
 !define MUI_FINISHPAGE_RUN_PARAMETERS $INSTDIR\bitcoin-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/gilsun91/bitcoin-master/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/gilsun91/bitcoin-master/swordtoken/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -72,16 +72,16 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /home/gilsun91/bitcoin-master/release/bitcoin-qt
-    File /oname=COPYING.txt /home/gilsun91/bitcoin-master/COPYING
-    File /oname=readme.txt /home/gilsun91/bitcoin-master/doc/README_windows.txt
+    File /home/gilsun91/bitcoin-master/swordtoken/release/bitcoin-qt
+    File /oname=COPYING.txt /home/gilsun91/bitcoin-master/swordtoken/COPYING
+    File /oname=readme.txt /home/gilsun91/bitcoin-master/swordtoken/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /home/gilsun91/bitcoin-master/release/bitcoind
-    File /home/gilsun91/bitcoin-master/release/bitcoin-cli
-    File /home/gilsun91/bitcoin-master/release/bitcoin-tx
-    File /home/gilsun91/bitcoin-master/release/bitcoin-wallet
+    File /home/gilsun91/bitcoin-master/swordtoken/release/bitcoind
+    File /home/gilsun91/bitcoin-master/swordtoken/release/bitcoin-cli
+    File /home/gilsun91/bitcoin-master/swordtoken/release/bitcoin-tx
+    File /home/gilsun91/bitcoin-master/swordtoken/release/bitcoin-wallet
     SetOutPath $INSTDIR\doc
-    File /r /x Makefile* /home/gilsun91/bitcoin-master/doc\*.*
+    File /r /x Makefile* /home/gilsun91/bitcoin-master/swordtoken/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd

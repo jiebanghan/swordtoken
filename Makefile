@@ -245,7 +245,8 @@ am__DIST_COMMON = $(srcdir)/Makefile.in \
 	$(top_srcdir)/test/util/rpcauth-test.py \
 	$(top_srcdir)/test/util/test_runner.py COPYING \
 	build-aux/compile build-aux/config.guess build-aux/config.sub \
-	build-aux/install-sh build-aux/ltmain.sh build-aux/missing
+	build-aux/depcomp build-aux/install-sh build-aux/ltmain.sh \
+	build-aux/missing
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 distdir = $(PACKAGE)-$(VERSION)
 top_distdir = $(distdir)
@@ -288,16 +289,16 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/gilsun91/bitcoin-master/build-aux/missing aclocal-1.16
+ACLOCAL = ${SHELL} /home/gilsun91/bitcoin-master/swordtoken/build-aux/missing aclocal-1.16
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 ANDROID_ARCH = 
 AR = /usr/bin/ar
 ARFLAGS = cr
 ARM_CRC_CXXFLAGS = 
-AUTOCONF = ${SHELL} /home/gilsun91/bitcoin-master/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /home/gilsun91/bitcoin-master/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /home/gilsun91/bitcoin-master/build-aux/missing automake-1.16
+AUTOCONF = ${SHELL} /home/gilsun91/bitcoin-master/swordtoken/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/gilsun91/bitcoin-master/swordtoken/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /home/gilsun91/bitcoin-master/swordtoken/build-aux/missing automake-1.16
 AVX2_CXXFLAGS = -mavx -mavx2
 AWK = gawk
 BDB_CFLAGS = -I/usr/local/lib/db4/include
@@ -405,7 +406,7 @@ LTLIBOBJS =
 LT_SYS_LIBRARY_PATH = 
 LUPDATE = 
 MAINT = 
-MAKEINFO = ${SHELL} /home/gilsun91/bitcoin-master/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /home/gilsun91/bitcoin-master/swordtoken/build-aux/missing makeinfo
 MAKENSIS = 
 MANIFEST_TOOL = :
 MINIUPNPC_CPPFLAGS = 
@@ -525,10 +526,10 @@ XGETTEXT =
 XORRISOFS = 
 ZMQ_CFLAGS = 
 ZMQ_LIBS = 
-abs_builddir = /home/gilsun91/bitcoin-master
-abs_srcdir = /home/gilsun91/bitcoin-master
-abs_top_builddir = /home/gilsun91/bitcoin-master
-abs_top_srcdir = /home/gilsun91/bitcoin-master
+abs_builddir = /home/gilsun91/bitcoin-master/swordtoken
+abs_srcdir = /home/gilsun91/bitcoin-master/swordtoken
+abs_top_builddir = /home/gilsun91/bitcoin-master/swordtoken
+abs_top_srcdir = /home/gilsun91/bitcoin-master/swordtoken
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -560,7 +561,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/gilsun91/bitcoin-master/build-aux/install-sh
+install_sh = ${SHELL} /home/gilsun91/bitcoin-master/swordtoken/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
