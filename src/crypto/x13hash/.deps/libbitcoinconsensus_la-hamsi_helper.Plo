@@ -1,4 +1,0 @@
-crypto/x13hash/libbitcoinconsensus_la-hamsi_helper.lo: \
- crypto/x13hash/hamsi_helper.c /usr/include/stdc-predef.h
-
-/usr/include/stdc-predef.h:
